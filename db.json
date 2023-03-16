@@ -1,0 +1,96 @@
+{
+  "users": [
+    {
+      "id": "admin",
+      "firstname": "Ajay",
+      "lastname": "kharat",
+      "phone": 8857822354,
+      "email": "kharatajay023@gmail.com",
+      "gender": "male",
+      "password": "Ajay@123"
+    },
+    {
+      "id": "g_k8gnC",
+      "firstname": "",
+      "lastname": "",
+      "phone": "",
+      "email": "",
+      "gender": "male",
+      "password": ""
+    },
+    {
+      "id": "tanaya007",
+      "firstname": "Tanaya",
+      "lastname": "Bagekar",
+      "phone": "8464684654684",
+      "email": "tanaya@123Gmail.com",
+      "gender": "male",
+      "password": "Tanaya@123"
+    },
+    {
+      "id": "shivani007",
+      "firstname": "Shivani",
+      "lastname": "chopra",
+      "phone": "8007894137",
+      "email": "shivani@gmail.com",
+      "gender": "male",
+      "password": "12345"
+    }
+  ],
+  "owners": [
+    {
+      "id": "owner",
+      "name": "Tanaya",
+      "phone": 9403782354,
+      "email": "tanayabagekar31@gmail.com",
+      "password": "Tanaya@123"
+    },
+    {
+      "id": "Ajay007",
+      "name": "Ajay Kharat",
+      "phone": "8857822354",
+      "email": "kharatajay314@gmail.com",
+      "gender": "male",
+      "password": "ajay@123"
+    },
+    {
+      "id": "Shivani008",
+      "name": "shivani",
+      "phone": "9881128200",
+      "email": "shivani@gmail.com",
+      "gender": "male",
+      "password": "Shivani@123"
+    },
+    {
+      "id": "ash007",
+      "name": "ashivini",
+      "phone": "55555555555",
+      "email": "ashivini@gmail.com",
+      "gender": "male",
+      "password": "Ash@123"
+    },
+    {
+      "id": "shivani",
+      "name": "shivani",
+      "phone": "9876543210",
+      "email": "shivani@gmail.com",
+      "gender": "male",
+      "password": "shivani"
+    }
+  ],
+  "admin": [
+    {
+      "id": "admin",
+      "name": "Ajay Kharat",
+      "email": "kharatajay023@gmail.com",
+      "password": "admin"
+    },
+    {
+      "id": "tanaya007",
+      "name": "Tanaya",
+      "email": "Tanaya@gmail.com",
+      "gender": "female",
+      "password": "tanaya"
+    }
+  ]
+}
