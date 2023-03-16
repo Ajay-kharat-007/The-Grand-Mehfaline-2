@@ -35,6 +35,33 @@
       "email": "shivani@gmail.com",
       "gender": "male",
       "password": "12345"
+    },
+    {
+      "id": "AG_CGhu",
+      "firstname": "",
+      "lastname": "",
+      "phone": "",
+      "email": "",
+      "gender": "male",
+      "password": ""
+    },
+    {
+      "id": "FwMaSJA",
+      "firstname": "",
+      "lastname": "",
+      "phone": "",
+      "email": "",
+      "gender": "male",
+      "password": ""
+    },
+    {
+      "id": "20_DBA0",
+      "firstname": "",
+      "lastname": "",
+      "phone": "",
+      "email": "",
+      "gender": "male",
+      "password": ""
     }
   ],
   "owners": [
@@ -91,6 +118,41 @@
       "email": "Tanaya@gmail.com",
       "gender": "female",
       "password": "tanaya"
+    }
+  ],
+  "hotels": [
+    {
+      "name": "Taj Hotel",
+      "phone": 8857822354,
+      "email": "ajay@gmail.com",
+      "menu": "Dal Tadka",
+      "discription": "The Greatest Hotel Of All Time",
+      "address": "Gandhi Raod, new mumbai - 430001",
+      "arooms": 23,
+      "workers": 50,
+      "id": 1
+    },
+    {
+      "name": "Green Valey",
+      "phone": 8888696921,
+      "email": "Green@gmail.com",
+      "menu": "Manchurian",
+      "discription": "The Best manchurian in the world",
+      "address": "nehru chauk , amaravati",
+      "arooms": 30,
+      "workers": 50,
+      "id": 3
+    },
+    {
+      "name": "5 Star",
+      "phone": 8888981212,
+      "email": "star@gmail.com",
+      "menu": "Coffee",
+      "discription": "The Best Coffee you will ever have !!",
+      "address": "Shivaji nagar , Pune - 431200",
+      "arooms": 30,
+      "workers": 50,
+      "id": 4
     }
   ]
 }

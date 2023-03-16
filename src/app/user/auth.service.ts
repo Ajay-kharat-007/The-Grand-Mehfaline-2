@@ -6,7 +6,8 @@ import { HttpClient } from '@angular/common/http';
 })
 export class AuthService {
 
-  url = 'http://localhost:3000/users'
+  url = 'http://localhost:3000/users';
+  url2 = 'http://localhost:3000/hotels'
 
   constructor(private http:HttpClient) { }
 
@@ -22,5 +23,8 @@ export class AuthService {
     return this.http.get(this.url+'/'+id);
   }
 
+  getHotel(){
+    return this.http.get(this.url2)
+  }
 
 }

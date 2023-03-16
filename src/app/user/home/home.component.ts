@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {AuthService} from '../auth.service'
 
 @Component({
   selector: 'app-home',
@@ -6,5 +7,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
+
+  hotels:any;
+
+  constructor(private service: AuthService){
+    this.service.getHotel().subscribe((res)=>{
+      console.log(res)
+      this.hotels = res
+    })
+  }
+
+
 
 }

@@ -1,0 +1,52 @@
+<div mat-dialog-title>
+    <h1>Hotel Registration Form</h1>
+</div>
+<form [formGroup]="hotelForm" (ngSubmit)="hotelRegistr()">
+    <div mat-dialog-content class="content">
+        <div class="row">
+            <mat-form-field appearance="outline">
+                <mat-label>Hotel name</mat-label>
+                <input matInput placeholder="Ex. Taj hotel" formControlName="name">
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>Hotel Mobile</mat-label>
+                <input matInput type="number" placeholder="Ex. 8857822354" formControlName="phone">
+            </mat-form-field>
+        </div>
+        <div class="row">
+            <mat-form-field appearance="outline">
+                <mat-label>Hotel Email</mat-label>
+                <input matInput type="email" placeholder="Ex. ajay@gmail.com" formControlName="email">
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>Hotel Menu</mat-label>
+                <input matInput placeholder="Ex. Dal Tadka" formControlName="menu">
+            </mat-form-field>
+        </div>
+        <div class="row">
+            <mat-form-field appearance="fill">
+                <mat-label>Hotel Discription</mat-label>
+                <textarea matInput placeholder="Ex. The Greatest Hotel Of All Time" formControlName="discription"></textarea>
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+                <mat-label>Hotel Address</mat-label>
+                <textarea matInput placeholder="Ex. Chatrapati Shivaji Nagar, Pune" formControlName="address"></textarea>
+            </mat-form-field>
+        </div>
+        <div class="row">
+            <mat-form-field appearance="outline">
+                <mat-label>Available Rooms</mat-label>
+                <input matInput placeholder="Ex. 21" type="number" formControlName="arooms">
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>Hotel Workers</mat-label>
+                <input matInput placeholder="Ex. 20" type="number" formControlName="workers">
+            </mat-form-field>
+        </div>
+
+    </div>
+    <div mat-dialog-actions class="action">
+        <button mat-raised-button type="button" (click)="closeDialog()">Cancel</button>
+        <button mat-raised-button color="primary">{{data ? 'Update': 'Save'}}</button>
+    </div>
+</form>

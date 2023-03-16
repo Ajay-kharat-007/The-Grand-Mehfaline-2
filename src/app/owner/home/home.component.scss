@@ -1,34 +1,18 @@
-.container{
-    margin: 20px auto;
+.container {
     width: 95vw;
-    height: 85vh;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-    border-radius: 25px;
     position: relative;
     right: 425px;
 }
 
-mat-toolbar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+.example-spacer {
+    flex: 1 1 auto;
+  }
 
-span {
-    margin-left: 30px;
-    font-size: 22px;
-    cursor: pointer;
-    position: relative;
-    top: 0;
-    transition: 0.3s;
-}
-
-span:hover {
-    color: darkgoldenrod;
-    top: -5px;
-}
-
-button {
-    margin-right: 30px;
-    font-size: 16px;
+.main-body {
+    padding-top: 20px;
+    margin: 0 auto;
+    max-width: 1750px;
+    mat-form-field {
+        width: 100%;
+    }
 }

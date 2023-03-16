@@ -7,7 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './home/home.component';
 import {MaterialModule} from '../../src/material.module';
 import { HttpClientModule} from '@angular/common/http';
-import { ToastrModule} from 'ngx-toastr'
+import { ToastrModule} from 'ngx-toastr';
 
 @NgModule({
   declarations: [

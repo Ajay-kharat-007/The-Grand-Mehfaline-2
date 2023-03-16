@@ -1,0 +1,48 @@
+.container {
+    width: 95vw;
+    position: relative;
+    top: 40px;
+    right: 440px;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+mat-card {
+    width: 30vw;
+    height: 400px;
+    margin: 20px 0px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 20px;
+    transition: 0.5s;
+    position: relative;
+    top: 0;
+}
+
+mat-card:hover {
+    top: -30px;
+}
+
+mat-card-title{
+    text-align: center;
+    font-size: 28px;
+    padding: 10px;
+}
+
+mat-card-content{
+    font-size: 22px;
+    padding: 10px;
+}
+
+mat-card-footer{
+    padding: 10px;
+    button {
+        width: 100%;
+    }
+}

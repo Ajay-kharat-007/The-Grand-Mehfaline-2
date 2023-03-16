@@ -1,1 +1,17 @@
-<p>home works!</p>
+<div class="container">
+    <mat-card *ngFor="let hotel of hotels">
+        <mat-card-title> {{hotel.name}}  </mat-card-title>
+        <mat-divider></mat-divider>
+        <mat-card-content>Hotel Contact : {{hotel.phone}} </mat-card-content>
+        <mat-card-content>Hotel Email : {{hotel.email}} </mat-card-content>
+        <mat-card-content>Special Dish : {{hotel.menu}} </mat-card-content>
+        <mat-card-content>Discription : {{hotel.discription}} </mat-card-content>
+        <mat-card-content>Location : {{hotel.address}} </mat-card-content>
+        <mat-card-content>Available rooms : {{hotel.arooms}} </mat-card-content>
+        <mat-card-content>Workers : {{hotel.workers}} </mat-card-content>
+        <mat-card-footer>
+            <button mat-raised-button color="primary">Book Hotel</button>
+        </mat-card-footer>
+    </mat-card>
+    
+</div>
