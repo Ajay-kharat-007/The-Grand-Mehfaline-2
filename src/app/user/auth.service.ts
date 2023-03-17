@@ -7,12 +7,17 @@ import { HttpClient } from '@angular/common/http';
 export class AuthService {
 
   url = 'http://localhost:3000/users';
-  url2 = 'http://localhost:3000/hotels'
+  url2 = 'http://localhost:3000/hotels';
+  url3 = 'http://localhost:3000/bookings';
 
   constructor(private http:HttpClient) { }
 
   getUsers(){
     return this.http.get(this.url)
+  }
+
+  BookHotel(data:any){
+    return this.http.post(this.url3, data)
   }
 
   postUsers(data:any){

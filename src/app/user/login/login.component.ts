@@ -30,7 +30,7 @@ export class LoginComponent {
       this.service.getUserByCode(this.loginForm.value.id).subscribe(item => {
         this.result = item;
         if (this.result.password === this.loginForm.value.password) {
-          this.router.navigateByUrl('/user/login');
+          this.router.navigateByUrl('/user/home');
           this.toastr.success('login Successfull')
         } else if (this.result.password !== this.loginForm.value.password) {
           this.toastr.error("Please check the password", 'Wrong Password')

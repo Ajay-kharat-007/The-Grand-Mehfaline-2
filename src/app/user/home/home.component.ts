@@ -1,5 +1,10 @@
-import { Component } from '@angular/core';
-import {AuthService} from '../auth.service'
+import { Component, Inject } from '@angular/core';
+import { AuthService } from '../auth.service';
+import { FormBuilder, FormGroup } from '@angular/forms';
+import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { ToastrService } from 'ngx-toastr';
+import { BookingFormComponent } from '../booking-form/booking-form.component';
+import { MatDialog } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-home',
@@ -8,15 +13,30 @@ import {AuthService} from '../auth.service'
 })
 export class HomeComponent {
 
-  hotels:any;
+  hotels: any;
 
-  constructor(private service: AuthService){
-    this.service.getHotel().subscribe((res)=>{
+  bookForm!: FormGroup;
+
+  constructor(
+    private service: AuthService,
+    private builder: FormBuilder,
+    private dialog: MatDialog,
+    private toastr: ToastrService,
+  ) {
+    this.service.getHotel().subscribe((res) => {
       console.log(res)
       this.hotels = res
+
+      this.bookForm = this.builder.group({
+
+      })
     })
   }
 
+  openBookingform(){
+    const dialogRef = this.dialog.open(BookingFormComponent);
+
+  }
 
 
 }

@@ -12,3 +12,13 @@ a{
     margin: 0 10px;
     text-decoration: none;
 }
+
+.box{
+    width: 90vw;
+    height: 75vh;
+    border: 2px solid black;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

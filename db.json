@@ -154,5 +154,47 @@
       "workers": 50,
       "id": 4
     }
+  ],
+  "bookings": [
+    {
+      "start": "2023-03-02T18:30:00.000Z",
+      "end": "2023-03-16T18:30:00.000Z",
+      "fullname": "sadfsa",
+      "email": "ajay@gmail.com",
+      "phone": "08857822354",
+      "payment": "net-banking",
+      "guests": "1",
+      "id": 1
+    },
+    {
+      "start": "2023-03-02T18:30:00.000Z",
+      "end": "2023-03-16T18:30:00.000Z",
+      "fullname": "sadfsa",
+      "email": "ajay@gmail.com",
+      "phone": "8857822354",
+      "payment": "net-banking",
+      "guests": "1",
+      "id": 2
+    },
+    {
+      "start": "2023-03-02T18:30:00.000Z",
+      "end": "2023-03-10T18:30:00.000Z",
+      "fullname": "ajay kharat",
+      "email": "kharat@gmail.com",
+      "phone": "324234234234242",
+      "payment": "upi",
+      "guests": "2",
+      "id": 3
+    },
+    {
+      "start": "2023-03-16T18:30:00.000Z",
+      "end": "2023-03-17T18:30:00.000Z",
+      "fullname": "rahul",
+      "email": "rahul@gmail.com",
+      "phone": "32423423423",
+      "payment": "upi",
+      "guests": "2",
+      "id": 4
+    }
   ]
 }

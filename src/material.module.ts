@@ -13,6 +13,7 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {MatDividerModule} from '@angular/material/divider';
+import { MatNativeDateModule } from "@angular/material/core";
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import {MatDividerModule} from '@angular/material/divider';
         MatDatepickerModule,
         MatToolbarModule,
         MatIconModule,
-        MatDividerModule
+        MatDividerModule,
+        MatNativeDateModule
     ]
 })
 export class MaterialModule { }

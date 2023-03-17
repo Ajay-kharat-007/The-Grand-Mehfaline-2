@@ -8,14 +8,16 @@ import {ReactiveFormsModule} from '@angular/forms';
 import { RegisterComponent } from './register/register.component';
 import { HttpClientModule } from '@angular/common/http'
 import { ToastrModule} from 'ngx-toastr';
-import { HomeComponent } from './home/home.component'
+import { HomeComponent } from './home/home.component';
+import { OwnersComponent } from './owners/owners.component'
 
 
 @NgModule({
   declarations: [
     LoginComponent,
     RegisterComponent,
-    HomeComponent
+    HomeComponent,
+    OwnersComponent
   ],
   imports: [
     CommonModule,
