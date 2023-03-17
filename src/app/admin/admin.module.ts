@@ -9,7 +9,8 @@ import { RegisterComponent } from './register/register.component';
 import { HttpClientModule } from '@angular/common/http'
 import { ToastrModule} from 'ngx-toastr';
 import { HomeComponent } from './home/home.component';
-import { OwnersComponent } from './owners/owners.component'
+import { OwnersComponent } from './owners/owners.component';
+import { UpdateOwnerComponent } from './update-owner/update-owner.component'
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { OwnersComponent } from './owners/owners.component'
     LoginComponent,
     RegisterComponent,
     HomeComponent,
-    OwnersComponent
+    OwnersComponent,
+    UpdateOwnerComponent
   ],
   imports: [
     CommonModule,

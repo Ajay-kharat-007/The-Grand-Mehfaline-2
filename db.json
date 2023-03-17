@@ -66,43 +66,11 @@
   ],
   "owners": [
     {
-      "id": "owner",
-      "name": "Tanaya",
-      "phone": 9403782354,
-      "email": "tanayabagekar31@gmail.com",
-      "password": "Tanaya@123"
-    },
-    {
       "id": "Ajay007",
       "name": "Ajay Kharat",
-      "phone": "8857822354",
       "email": "kharatajay314@gmail.com",
-      "gender": "male",
-      "password": "ajay@123"
-    },
-    {
-      "id": "Shivani008",
-      "name": "shivani",
-      "phone": "9881128200",
-      "email": "shivani@gmail.com",
-      "gender": "male",
-      "password": "Shivani@123"
-    },
-    {
-      "id": "ash007",
-      "name": "ashivini",
-      "phone": "55555555555",
-      "email": "ashivini@gmail.com",
-      "gender": "male",
-      "password": "Ash@123"
-    },
-    {
-      "id": "shivani",
-      "name": "shivani",
-      "phone": "9876543210",
-      "email": "shivani@gmail.com",
-      "gender": "male",
-      "password": "shivani"
+      "phone": "8857822354",
+      "gender": "male"
     }
   ],
   "admin": [
