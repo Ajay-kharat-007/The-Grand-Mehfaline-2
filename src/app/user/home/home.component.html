@@ -1,17 +1,22 @@
 <div class="container">
     <mat-card *ngFor="let hotel of hotels">
-        <mat-card-title> {{hotel.name}}  </mat-card-title>
-        <mat-divider></mat-divider>
-        <mat-card-content>Hotel Contact : {{hotel.phone}} </mat-card-content>
-        <mat-card-content>Hotel Email : {{hotel.email}} </mat-card-content>
-        <mat-card-content>Special Dish : {{hotel.menu}} </mat-card-content>
-        <mat-card-content>Discription : {{hotel.discription}} </mat-card-content>
-        <mat-card-content>Location : {{hotel.address}} </mat-card-content>
-        <mat-card-content>Available rooms : {{hotel.arooms}} </mat-card-content>
-        <mat-card-content>Workers : {{hotel.workers}} </mat-card-content>
-        <mat-card-footer>
-            <button mat-raised-button color="primary" (click)="openBookingform()">Book Hotel</button>
-        </mat-card-footer>
+        <div class="img" id="box">
+            <img mat-card-image src="https://source.unsplash.com/1600x900/?{{hotel.img}}" alt="Photo of a Shiba Inu">
+        </div>
+        <div class="img">
+            <mat-card-title> {{hotel.name}} </mat-card-title>
+            <mat-divider></mat-divider>
+            <mat-card-content><b> Contact :</b> {{hotel.phone}} </mat-card-content>
+            <mat-card-content><b> Email : </b>{{hotel.email}} </mat-card-content>
+            <mat-card-content><b>Special Dish : </b>{{hotel.menu}} </mat-card-content>
+            <mat-card-content><b>Discription : </b>{{hotel.discription}} </mat-card-content>
+            <mat-card-content><b>Location : </b>{{hotel.address}} </mat-card-content>
+            <mat-card-content><b>Available rooms : </b>{{hotel.arooms}} </mat-card-content>
+            <mat-card-content><b>Workers : </b>{{hotel.workers}} </mat-card-content>
+            <mat-card-footer>
+                <button mat-raised-button color="accent" (click)="openBookingform()">Book Hotel</button>
+            </mat-card-footer>
+        </div>
     </mat-card>
-    
+
 </div>

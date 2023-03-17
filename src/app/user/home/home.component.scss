@@ -15,18 +15,12 @@
 
 
 mat-card {
-    width: 30vw;
-    height: 400px;
+    width: 100%;
     margin: 20px 0px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     border-radius: 20px;
-    transition: 0.5s;
-    position: relative;
-    top: 0;
-}
-
-mat-card:hover {
-    top: -30px;
+    display: flex;
+    flex-direction: row;
 }
 
 mat-card-title{
@@ -43,6 +37,33 @@ mat-card-content{
 mat-card-footer{
     padding: 10px;
     button {
-        width: 100%;
+        width: 95%;
+        margin: 50px auto;
+        padding: 20px;
+        font-size: 20px;
+    }
+}
+
+b{
+    margin: 0px 20px;
+}
+
+.img{
+    height: 100%;
+    width: 50%;
+}
+
+#box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    img{
+        width: 90%;
+        height: 95%;
+        border-radius: 25px;
+        position: relative;
+        top: 10px;
+        right: 15px;
     }
 }

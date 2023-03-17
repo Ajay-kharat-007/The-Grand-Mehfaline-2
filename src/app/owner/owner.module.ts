@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
 import { OwnerRoutingModule } from './owner-routing.module';
 import { LoginComponent } from './login/login.component';
 import {MaterialModule} from '../../../src/material.module';
@@ -16,7 +15,7 @@ import { HotelRegisterComponent } from './hotel-register/hotel-register.componen
     LoginComponent,
     RegisterComponent,
     HomeComponent,
-    HotelRegisterComponent
+    HotelRegisterComponent,
   ],
   imports: [
     CommonModule,
@@ -24,7 +23,7 @@ import { HotelRegisterComponent } from './hotel-register/hotel-register.componen
     MaterialModule,
     ReactiveFormsModule,
     ToastrModule.forRoot(),
-    HttpClientModule
+    HttpClientModule,
   ]
 })
 export class OwnerModule { }

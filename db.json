@@ -54,6 +54,7 @@
       "address": "Gandhi Raod, new mumbai - 430001",
       "arooms": 23,
       "workers": 50,
+      "img": "hotel",
       "id": 1
     },
     {
@@ -65,6 +66,7 @@
       "address": "Nehru Chauk , Amaravati - 421212",
       "arooms": 30,
       "workers": 50,
+      "img": "restaurant",
       "id": 3
     },
     {
@@ -76,6 +78,7 @@
       "address": "Chatrapati Shivaji Nagar, Pune - 431213",
       "arooms": 25,
       "workers": 20,
+      "img": "resort",
       "id": 4
     }
   ],
