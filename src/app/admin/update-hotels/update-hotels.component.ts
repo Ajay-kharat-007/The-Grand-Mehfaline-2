@@ -5,20 +5,19 @@ import { ToastrService } from 'ngx-toastr';
 import { AuthService } from '../service/auth.service'
 
 @Component({
-  selector: 'app-hotel-register',
-  templateUrl: './hotel-register.component.html',
-  styleUrls: ['./hotel-register.component.scss']
+  selector: 'app-update-hotels',
+  templateUrl: './update-hotels.component.html',
+  styleUrls: ['./update-hotels.component.scss']
 })
-export class HotelRegisterComponent implements OnInit {
+export class UpdateHotelsComponent {
 
-  
   hotelForm: FormGroup;
   
   constructor(
     private builder: FormBuilder,
     private service: AuthService,
     private toastr : ToastrService,
-    private dialog: MatDialogRef<HotelRegisterComponent>,
+    private dialog: MatDialogRef<UpdateHotelsComponent>,
     @Inject(MAT_DIALOG_DATA) public data:any
     
   ){

@@ -10,7 +10,11 @@ import { HttpClientModule } from '@angular/common/http'
 import { ToastrModule} from 'ngx-toastr';
 import { HomeComponent } from './home/home.component';
 import { OwnersComponent } from './owners/owners.component';
-import { UpdateOwnerComponent } from './update-owner/update-owner.component'
+import { UpdateOwnerComponent } from './update-owner/update-owner.component';
+import { UsersComponent } from './users/users.component';
+import { UpdateUsersComponent } from './update-users/update-users.component';
+import { HotelsComponent } from './hotels/hotels.component';
+import { UpdateHotelsComponent } from './update-hotels/update-hotels.component'
 
 
 @NgModule({
@@ -19,7 +23,11 @@ import { UpdateOwnerComponent } from './update-owner/update-owner.component'
     RegisterComponent,
     HomeComponent,
     OwnersComponent,
-    UpdateOwnerComponent
+    UpdateOwnerComponent,
+    UsersComponent,
+    UpdateUsersComponent,
+    HotelsComponent,
+    UpdateHotelsComponent
   ],
   imports: [
     CommonModule,

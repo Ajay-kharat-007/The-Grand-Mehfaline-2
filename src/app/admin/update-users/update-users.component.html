@@ -1,5 +1,5 @@
 <div mat-dialog-title>
-    <h1>Owner Update Form</h1>
+    <h1>User Update Form</h1>
 </div>
 <form [formGroup]="hotelForm" (ngSubmit)="hotelRegistr()">
     <div mat-dialog-content class="content">
@@ -11,8 +11,14 @@
         </div>
         <div class="row">
             <mat-form-field appearance="outline">
-                <mat-label>Owner Name</mat-label>
-                <input matInput placeholder="Ex. Taj hotel" formControlName="name">
+                <mat-label>First Name</mat-label>
+                <input matInput placeholder="Ex. Taj hotel" formControlName="firstname">
+            </mat-form-field>
+        </div>
+        <div class="row">
+            <mat-form-field appearance="outline">
+                <mat-label>Last Name</mat-label>
+                <input matInput placeholder="Ex. Taj hotel" formControlName="lastname">
             </mat-form-field>
         </div>
         <div class="row">
@@ -30,7 +36,7 @@
         <div class="row">
             <mat-form-field appearance="outline">
                 <mat-label>Password</mat-label>
-                <input matInput  placeholder="Ex. Tanay@123" formControlName="password">
+                <input matInput placeholder="Ex. Ajay@123" formControlName="password">
             </mat-form-field>
         </div>
         <div class="row">

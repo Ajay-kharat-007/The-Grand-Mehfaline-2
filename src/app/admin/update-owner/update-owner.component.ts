@@ -26,7 +26,8 @@ export class UpdateOwnerComponent implements OnInit {
       name : '',
       email : '',
       phone : '',
-      gender : ''
+      gender : '',
+      password:''
     })
   }
 

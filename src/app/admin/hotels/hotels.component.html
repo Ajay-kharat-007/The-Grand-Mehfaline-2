@@ -2,8 +2,8 @@
     <mat-toolbar>
         <a routerLink="/admin/home">Admin</a>
         <span class="example-spacer"></span>
+        <a routerLink="/admin/owners" mat-raised-button>Owners</a>
         <a routerLink="/admin/users" mat-raised-button>Users</a>
-        <a routerLink="/admin/hotels" mat-raised-button>Hotels</a>
     </mat-toolbar>
     <div class="box">
         <div class="main-body">
@@ -25,23 +25,43 @@
     
                     <!-- Progress Column -->
                     <ng-container matColumnDef="name">
-                        <th mat-header-cell *matHeaderCellDef mat-sort-header> Owner Name </th>
+                        <th mat-header-cell *matHeaderCellDef mat-sort-header> Hotel Name </th>
                         <td mat-cell *matCellDef="let row"> {{row.name}}</td>
                     </ng-container>
                     <!-- Progress Column -->
                     <ng-container matColumnDef="email">
-                        <th mat-header-cell *matHeaderCellDef mat-sort-header> Owner Email </th>
+                        <th mat-header-cell *matHeaderCellDef mat-sort-header> Email </th>
                         <td mat-cell *matCellDef="let row"> {{row.email}}</td>
                     </ng-container>
                     <!-- Progress Column -->
                     <ng-container matColumnDef="phone">
-                        <th mat-header-cell *matHeaderCellDef mat-sort-header> Owner Phone </th>
+                        <th mat-header-cell *matHeaderCellDef mat-sort-header> Phone </th>
                         <td mat-cell *matCellDef="let row"> {{row.phone}}</td>
                     </ng-container>
                     <!-- Progress Column -->
-                    <ng-container matColumnDef="gender">
-                        <th mat-header-cell *matHeaderCellDef mat-sort-header> Owner Gender </th>
-                        <td mat-cell *matCellDef="let row"> {{row.gender}}</td>
+                    <ng-container matColumnDef="menu">
+                        <th mat-header-cell *matHeaderCellDef mat-sort-header> Menu </th>
+                        <td mat-cell *matCellDef="let row"> {{row.menu}}</td>
+                    </ng-container>
+                    <!-- Progress Column -->
+                    <ng-container matColumnDef="discription">
+                        <th mat-header-cell *matHeaderCellDef mat-sort-header> Discription </th>
+                        <td mat-cell *matCellDef="let row"> {{row.discription}}</td>
+                    </ng-container>
+                    <!-- Progress Column -->
+                    <ng-container matColumnDef="address">
+                        <th mat-header-cell *matHeaderCellDef mat-sort-header> Address </th>
+                        <td mat-cell *matCellDef="let row"> {{row.address}}</td>
+                    </ng-container>
+                    <!-- Progress Column -->
+                    <ng-container matColumnDef="arooms">
+                        <th mat-header-cell *matHeaderCellDef mat-sort-header> Available Rooms </th>
+                        <td mat-cell *matCellDef="let row"> {{row.arooms}}</td>
+                    </ng-container>
+                    <!-- Progress Column -->
+                    <ng-container matColumnDef="workers">
+                        <th mat-header-cell *matHeaderCellDef mat-sort-header> Workers </th>
+                        <td mat-cell *matCellDef="let row"> {{row.workers}}</td>
                     </ng-container>
                     <!-- Progress Column -->
                     <ng-container matColumnDef="action">

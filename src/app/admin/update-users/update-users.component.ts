@@ -5,32 +5,30 @@ import { ToastrService } from 'ngx-toastr';
 import { AuthService } from '../service/auth.service'
 
 @Component({
-  selector: 'app-hotel-register',
-  templateUrl: './hotel-register.component.html',
-  styleUrls: ['./hotel-register.component.scss']
+  selector: 'app-update-users',
+  templateUrl: './update-users.component.html',
+  styleUrls: ['./update-users.component.scss']
 })
-export class HotelRegisterComponent implements OnInit {
+export class UpdateUsersComponent {
 
-  
   hotelForm: FormGroup;
   
   constructor(
     private builder: FormBuilder,
     private service: AuthService,
     private toastr : ToastrService,
-    private dialog: MatDialogRef<HotelRegisterComponent>,
+    private dialog: MatDialogRef<UpdateUsersComponent>,
     @Inject(MAT_DIALOG_DATA) public data:any
     
   ){
     this.hotelForm = this.builder.group({
-      name : '',
+      id : '',
+      firstname : '',
+      lastname : '',
       phone : '',
       email : '',
-      menu : '',
-      discription : '',
-      address : '',
-      arooms : '',
-      workers : ''
+      gender : '',
+      password : ''
     })
   }
 
@@ -41,7 +39,7 @@ export class HotelRegisterComponent implements OnInit {
   hotelRegistr(){
     if(this.hotelForm.valid) {
       if(this.data){
-        this.service.updateHotel(this.data.id, this.hotelForm.value).subscribe({
+        this.service.updateUser(this.data.id, this.hotelForm.value).subscribe({
           next: (val:any) => {
             this.toastr.success('Hotel Detail Updated Successfully !!');
             this.dialog.close(true);
@@ -53,7 +51,7 @@ export class HotelRegisterComponent implements OnInit {
         })
       }else {
         console.log(this.hotelForm.value)
-      this.service.registerHotel(this.hotelForm.value).subscribe({
+      this.service.registerUser(this.hotelForm.value).subscribe({
         next: (val:any) => {
           this.toastr.success('Hotel Registration Successfull', "Congratulations!!");
           this.dialog.close(true);
@@ -66,6 +64,10 @@ export class HotelRegisterComponent implements OnInit {
       }
     }
       
+  }
+
+  closeDialog(){
+    this.dialog.close();
   }
 
 }

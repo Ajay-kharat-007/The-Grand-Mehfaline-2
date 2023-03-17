@@ -1,6 +1,6 @@
 import { Component, ViewChild } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-import {UpdateOwnerComponent} from '../update-owner/update-owner.component'
+import {UpdateHotelsComponent} from '../update-hotels/update-hotels.component'
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
@@ -8,18 +8,22 @@ import { AuthService } from '../service/auth.service';
 import { ToastrService } from 'ngx-toastr';
 
 @Component({
-  selector: 'app-owners',
-  templateUrl: './owners.component.html',
-  styleUrls: ['./owners.component.scss']
+  selector: 'app-hotels',
+  templateUrl: './hotels.component.html',
+  styleUrls: ['./hotels.component.scss']
 })
-export class OwnersComponent {
+export class HotelsComponent {
 
   displayedColumns: string[] = [
     'id',
     'name',
-    'email',
     'phone',
-    'gender',
+    'email',
+    'menu',
+    'discription',
+    'address',
+    'arooms',
+    'workers',
     'action'
   ];
   dataSource!: MatTableDataSource<any>;
@@ -39,7 +43,7 @@ export class OwnersComponent {
   }
 
   hotelRegister() {
-    const dialogRef = this.dialog.open(UpdateOwnerComponent)
+    const dialogRef = this.dialog.open(UpdateHotelsComponent)
     dialogRef.afterClosed().subscribe({
       next: (val) => {
         if (val) {
@@ -50,7 +54,7 @@ export class OwnersComponent {
   }
 
   getHotelList() {
-    this.service.getOwnerList().subscribe({
+    this.service.getHotelsList().subscribe({
       next: (res: any) => {
         this.dataSource = new MatTableDataSource(res);
         this.dataSource.sort = this.sort;
@@ -71,7 +75,7 @@ export class OwnersComponent {
   }
 
   deleteHotel(id: number) {
-    this.service.deleteOwner(id).subscribe({
+    this.service.deleteHotel(id).subscribe({
       next: (res) => {
         this.toastr.success("Hotel Deleted !!");
         this.getHotelList();
@@ -81,7 +85,7 @@ export class OwnersComponent {
   }
 
   openHotelForm(data: any) {
-    const dialogRef = this.dialog.open(UpdateOwnerComponent, {
+    const dialogRef = this.dialog.open(UpdateHotelsComponent, {
       data,
     });
 

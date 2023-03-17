@@ -1,6 +1,6 @@
 import { Component, ViewChild } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-import {UpdateOwnerComponent} from '../update-owner/update-owner.component'
+import {UpdateUsersComponent} from '../update-users/update-users.component'
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
@@ -8,17 +8,18 @@ import { AuthService } from '../service/auth.service';
 import { ToastrService } from 'ngx-toastr';
 
 @Component({
-  selector: 'app-owners',
-  templateUrl: './owners.component.html',
-  styleUrls: ['./owners.component.scss']
+  selector: 'app-users',
+  templateUrl: './users.component.html',
+  styleUrls: ['./users.component.scss']
 })
-export class OwnersComponent {
+export class UsersComponent {
 
   displayedColumns: string[] = [
     'id',
-    'name',
-    'email',
+    'firstname',
+    'lastname',
     'phone',
+    'email',
     'gender',
     'action'
   ];
@@ -39,7 +40,7 @@ export class OwnersComponent {
   }
 
   hotelRegister() {
-    const dialogRef = this.dialog.open(UpdateOwnerComponent)
+    const dialogRef = this.dialog.open(UpdateUsersComponent)
     dialogRef.afterClosed().subscribe({
       next: (val) => {
         if (val) {
@@ -50,7 +51,7 @@ export class OwnersComponent {
   }
 
   getHotelList() {
-    this.service.getOwnerList().subscribe({
+    this.service.getUsersList().subscribe({
       next: (res: any) => {
         this.dataSource = new MatTableDataSource(res);
         this.dataSource.sort = this.sort;
@@ -71,7 +72,7 @@ export class OwnersComponent {
   }
 
   deleteHotel(id: number) {
-    this.service.deleteOwner(id).subscribe({
+    this.service.deleteUser(id).subscribe({
       next: (res) => {
         this.toastr.success("Hotel Deleted !!");
         this.getHotelList();
@@ -81,7 +82,7 @@ export class OwnersComponent {
   }
 
   openHotelForm(data: any) {
-    const dialogRef = this.dialog.open(UpdateOwnerComponent, {
+    const dialogRef = this.dialog.open(UpdateUsersComponent, {
       data,
     });
 
@@ -93,5 +94,4 @@ export class OwnersComponent {
       }
     })
   }
-
 }

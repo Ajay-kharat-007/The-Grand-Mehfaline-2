@@ -10,67 +10,23 @@
       "password": "Ajay@123"
     },
     {
-      "id": "g_k8gnC",
-      "firstname": "",
-      "lastname": "",
-      "phone": "",
-      "email": "",
-      "gender": "male",
-      "password": ""
-    },
-    {
       "id": "tanaya007",
       "firstname": "Tanaya",
       "lastname": "Bagekar",
       "phone": "8464684654684",
       "email": "tanaya@123Gmail.com",
-      "gender": "male",
+      "gender": "female",
       "password": "Tanaya@123"
-    },
-    {
-      "id": "shivani007",
-      "firstname": "Shivani",
-      "lastname": "chopra",
-      "phone": "8007894137",
-      "email": "shivani@gmail.com",
-      "gender": "male",
-      "password": "12345"
-    },
-    {
-      "id": "AG_CGhu",
-      "firstname": "",
-      "lastname": "",
-      "phone": "",
-      "email": "",
-      "gender": "male",
-      "password": ""
-    },
-    {
-      "id": "FwMaSJA",
-      "firstname": "",
-      "lastname": "",
-      "phone": "",
-      "email": "",
-      "gender": "male",
-      "password": ""
-    },
-    {
-      "id": "20_DBA0",
-      "firstname": "",
-      "lastname": "",
-      "phone": "",
-      "email": "",
-      "gender": "male",
-      "password": ""
     }
   ],
   "owners": [
     {
-      "id": "Ajay007",
+      "id": "admin",
       "name": "Ajay Kharat",
-      "email": "kharatajay314@gmail.com",
+      "email": "kharatajay023@gmail.com",
       "phone": "8857822354",
-      "gender": "male"
+      "gender": "male",
+      "password": "admin"
     }
   ],
   "admin": [
@@ -106,20 +62,20 @@
       "email": "Green@gmail.com",
       "menu": "Manchurian",
       "discription": "The Best manchurian in the world",
-      "address": "nehru chauk , amaravati",
+      "address": "Nehru Chauk , Amaravati - 421212",
       "arooms": 30,
       "workers": 50,
       "id": 3
     },
     {
-      "name": "5 Star",
+      "name": "Five Star Hotel",
       "phone": 8888981212,
       "email": "star@gmail.com",
       "menu": "Coffee",
       "discription": "The Best Coffee you will ever have !!",
-      "address": "Shivaji nagar , Pune - 431200",
-      "arooms": 30,
-      "workers": 50,
+      "address": "Chatrapati Shivaji Nagar, Pune - 431213",
+      "arooms": 25,
+      "workers": 20,
       "id": 4
     }
   ],
@@ -163,6 +119,17 @@
       "payment": "upi",
       "guests": "2",
       "id": 4
+    },
+    {
+      "start": "2023-03-01T18:30:00.000Z",
+      "end": "2023-03-16T18:30:00.000Z",
+      "fullname": "Tanaya Bagekar",
+      "email": "tanaya@12gmail.com",
+      "phone": "9876546512",
+      "payment": "qr",
+      "guests": "2",
+      "rooms": "2",
+      "id": 5
     }
   ]
 }
