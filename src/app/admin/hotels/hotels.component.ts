@@ -86,7 +86,7 @@ export class HotelsComponent {
 
   openHotelForm(data: any) {
     const dialogRef = this.dialog.open(UpdateHotelsComponent, {
-      data,
+      data
     });
 
     dialogRef.afterClosed().subscribe({

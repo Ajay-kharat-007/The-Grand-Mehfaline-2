@@ -45,7 +45,6 @@ export class HotelRegisterComponent implements OnInit {
           next: (val:any) => {
             this.toastr.success('Hotel Detail Updated Successfully !!');
             this.dialog.close(true);
-  
           },
           error: (err:any)=>{
             this.toastr.error("some error occurred")

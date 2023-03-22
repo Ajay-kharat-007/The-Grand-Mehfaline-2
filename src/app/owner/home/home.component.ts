@@ -52,7 +52,7 @@ export class HomeComponent implements OnInit {
     })
   }
 
-  getHotelList() {
+  getHotelList(){
     this.service.getHotelList().subscribe({
       next: (res: any) => {
         this.dataSource = new MatTableDataSource(res);
@@ -76,7 +76,7 @@ export class HomeComponent implements OnInit {
   deleteHotel(id: number) {
     this.service.deleteHotel(id).subscribe({
       next: (res) => {
-        this.toastr.success("Hotel Deleted !!");
+        this.toastr.error("Hotel Deleted !!");
         this.getHotelList();
       },
       error: console.log,
