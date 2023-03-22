@@ -30,6 +30,7 @@ export class RegisterComponent {
   proceedRegister() {
     this.service.postUsers(this.registerForm.value).subscribe((res)=>{
       console.log(res)
+      this.router.navigateByUrl('/owner/login')
     })
   }
 

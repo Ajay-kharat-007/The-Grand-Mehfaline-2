@@ -17,6 +17,33 @@
       "email": "tanaya@123Gmail.com",
       "gender": "female",
       "password": "Tanaya@123"
+    },
+    {
+      "id": "Ajay007",
+      "firstname": "Ajay ",
+      "lastname": "Kharat",
+      "phone": "8857822354",
+      "email": "Ajay@123Gmail.com",
+      "gender": "male",
+      "password": "Ajay@123"
+    },
+    {
+      "id": "Rahul007",
+      "firstname": "Rahul",
+      "lastname": "Dawle",
+      "phone": "9881128200",
+      "email": "rahul.dawle@gmail.com",
+      "gender": "male",
+      "password": "ajay@123"
+    },
+    {
+      "id": "Ganesh123",
+      "firstname": "Ganesh",
+      "lastname": "Kharat",
+      "phone": "9421322354",
+      "email": "Ganesh.kharat@gmail.com",
+      "gender": "male",
+      "password": "Ganesh@123"
     }
   ],
   "owners": [
@@ -60,8 +87,7 @@
       "discription": "The Greatest Hotel Of All Time",
       "address": "Gandhi Raod, new mumbai - 430001",
       "arooms": 23,
-      "workers": 50,
-      "img": "hotel",
+      "workers": 30,
       "id": 1
     },
     {
@@ -72,8 +98,7 @@
       "discription": "The Best manchurian in the world",
       "address": "Nehru Chauk , Amaravati - 421212",
       "arooms": 30,
-      "workers": 50,
-      "img": "restaurant",
+      "workers": 40,
       "id": 3
     },
     {
