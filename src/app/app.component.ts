@@ -15,7 +15,7 @@ export class AppComponent implements DoCheck {
 
   ngDoCheck(): void {
     let login = this.router.url;
-    console.log(login)
+    console.log(login) // console is the part of node and browser not javascript
     if (login === '/admin/home' || login === '/admin/owners' || login === '/admin/hotels' || login === '/admin/users') {
       this.isLogin = 'admin'
     } else if (login === '/owner/home') {
