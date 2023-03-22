@@ -1,4 +1,3 @@
-import { ConstantPool } from '@angular/compiler';
 import { Component } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
@@ -30,7 +29,7 @@ export class RegisterComponent {
   proceedRegister() {
     this.service.postUsers(this.registerForm.value).subscribe((res)=>{
       console.log(res)
-      this.router.navigateByUrl('/owner/login')
+      this.router.navigateByUrl('/user/login')
     })
   }
 }

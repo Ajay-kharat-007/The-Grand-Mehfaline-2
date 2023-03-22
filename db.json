@@ -37,13 +37,22 @@
       "password": "ajay@123"
     },
     {
-      "id": "Ganesh123",
-      "firstname": "Ganesh",
-      "lastname": "Kharat",
-      "phone": "9421322354",
-      "email": "Ganesh.kharat@gmail.com",
-      "gender": "male",
-      "password": "Ganesh@123"
+      "id": "Shruti123",
+      "firstname": "Shruti",
+      "lastname": "Bagekar",
+      "phone": 9657689854,
+      "email": "shruti.bagekar@gmail.com",
+      "gender": "female",
+      "password": "Shriti@123"
+    },
+    {
+      "id": "Shivani007",
+      "firstname": "Shivani",
+      "lastname": "Jadhav",
+      "phone": "9403782354",
+      "email": "Shivani.jadhav@gmail.com",
+      "gender": "female",
+      "password": "Shivani@123"
     }
   ],
   "owners": [
@@ -54,6 +63,14 @@
       "phone": "8857822354",
       "gender": "male",
       "password": "admin"
+    },
+    {
+      "id": "Shivani007",
+      "name": "Shivani Jadhav",
+      "email": "Shivani.jadhav@gmail.com",
+      "phone": 9403782354,
+      "gender": "female",
+      "password": "Shivani@123"
     }
   ],
   "admin": [
@@ -76,6 +93,13 @@
       "email": "Kapil@gmail.com",
       "gender": "male",
       "password": "kapil"
+    },
+    {
+      "id": "Shivani007",
+      "name": "Shivani jadhav",
+      "email": "Shivani.jadhav@gmail.com",
+      "gender": "female",
+      "password": "Shivani@123"
     }
   ],
   "hotels": [
@@ -86,8 +110,8 @@
       "menu": "Dal Tadka",
       "discription": "The Greatest Hotel Of All Time",
       "address": "Gandhi Raod, new mumbai - 430001",
-      "arooms": 23,
-      "workers": 30,
+      "arooms": 230,
+      "workers": 250,
       "id": 1
     },
     {
@@ -97,8 +121,8 @@
       "menu": "Manchurian",
       "discription": "The Best manchurian in the world",
       "address": "Nehru Chauk , Amaravati - 421212",
-      "arooms": 30,
-      "workers": 40,
+      "arooms": 300,
+      "workers": 500,
       "id": 3
     },
     {
@@ -109,9 +133,19 @@
       "discription": "The Best Coffee you will ever have !!",
       "address": "Chatrapati Shivaji Nagar, Pune - 431213",
       "arooms": 25,
-      "workers": 20,
-      "img": "resort",
+      "workers": 30,
       "id": 4
+    },
+    {
+      "name": "Hotel Lotus",
+      "phone": 7499269640,
+      "email": "Tanaya@gmail.com",
+      "menu": "Chat",
+      "discription": "The best Chat in the whole universe !!",
+      "address": "pundalik baba nagar, \nAmaravati - 444604",
+      "arooms": 200,
+      "workers": 400,
+      "id": 5
     }
   ],
   "bookings": [
@@ -176,6 +210,17 @@
       "guests": "2",
       "rooms": "2",
       "id": 6
+    },
+    {
+      "start": "2023-02-28T18:30:00.000Z",
+      "end": "2023-03-09T18:30:00.000Z",
+      "fullname": "Shivani Jadhav",
+      "email": "Shivani.jadhav@gmail.com",
+      "phone": "9403782354",
+      "payment": "upi",
+      "guests": "2",
+      "rooms": "1",
+      "id": 7
     }
   ]
 }

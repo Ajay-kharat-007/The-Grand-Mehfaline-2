@@ -6,24 +6,24 @@ import { Router } from '@angular/router';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements DoCheck{
+export class AppComponent implements DoCheck {
   title = 'The-Grand-Mehfaline';
-  isLogin= "main";
+  isLogin = "main";
 
-  constructor(private router:Router){
+  constructor(private router: Router) {
   }
 
   ngDoCheck(): void {
     let login = this.router.url;
-    console.log(this.router.url)
-    if(login == '/admin/home'){
-      this.isLogin="admin";
-    }else if(login == '/user/home'){
-      this.isLogin="user";
-    }else if(login == '/owner/home'){
-      this.isLogin="owner";
-    }else {
-      this.isLogin= "main"
+    console.log(login)
+    if (login === '/admin/home' || login === '/admin/owners' || login === '/admin/hotels' || login === '/admin/users') {
+      this.isLogin = 'admin'
+    } else if (login === '/owner/home') {
+      this.isLogin = 'owner'
+    } else if (login === '/user/home') {
+      this.isLogin = 'user'
+    } else {
+      this.isLogin = 'main'
     }
   }
 }
