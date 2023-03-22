@@ -33,5 +33,4 @@ export class RegisterComponent {
       this.router.navigateByUrl('/owner/login')
     })
   }
-
 }
