@@ -12,22 +12,22 @@ import { AuthService } from '../service/auth.service'
 export class UpdateOwnerComponent implements OnInit {
 
   hotelForm: FormGroup;
-  
+
   constructor(
     private builder: FormBuilder,
     private service: AuthService,
-    private toastr : ToastrService,
+    private toastr: ToastrService,
     private dialog: MatDialogRef<UpdateOwnerComponent>,
-    @Inject(MAT_DIALOG_DATA) public data:any
-    
-  ){
+    @Inject(MAT_DIALOG_DATA) public data: any
+
+  ) {
     this.hotelForm = this.builder.group({
-      id : '',
-      name : '',
-      email : '',
-      phone : '',
-      gender : '',
-      password:''
+      id: '',
+      name: '',
+      email: '',
+      phone: '',
+      gender: '',
+      password: ''
     })
   }
 
@@ -35,37 +35,37 @@ export class UpdateOwnerComponent implements OnInit {
     this.hotelForm.patchValue(this.data)
   }
 
-  hotelRegistr(){
-    if(this.hotelForm.valid) {
-      if(this.data){
+  hotelRegistr() {
+    if (this.hotelForm.valid) {
+      if (this.data) {
         this.service.updateOwner(this.data.id, this.hotelForm.value).subscribe({
-          next: (val:any) => {
+          next: (val: any) => {
             this.toastr.success('Hotel Detail Updated Successfully !!');
             this.dialog.close(true);
-  
+
           },
-          error: (err:any)=>{
+          error: (err: any) => {
             this.toastr.error("some error occurred")
           }
         })
-      }else {
+      } else {
         console.log(this.hotelForm.value)
-      this.service.registerOwner(this.hotelForm.value).subscribe({
-        next: (val:any) => {
-          this.toastr.success('Hotel Registration Successfull', "Congratulations!!");
-          this.dialog.close(true);
+        this.service.registerOwner(this.hotelForm.value).subscribe({
+          next: (val: any) => {
+            this.toastr.success('Hotel Registration Successfull', "Congratulations!!");
+            this.dialog.close(true);
 
-        },
-        error: (err:any)=>{
-          this.toastr.error("some error occurred")
-        }
-      })
+          },
+          error: (err: any) => {
+            this.toastr.error("some error occurred")
+          }
+        })
       }
     }
-      
+
   }
 
-  closeDialog(){
+  closeDialog() {
     this.dialog.close();
   }
 
