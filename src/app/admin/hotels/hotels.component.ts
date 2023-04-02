@@ -43,7 +43,10 @@ export class HotelsComponent {
   }
 
   hotelRegister() {
-    const dialogRef = this.dialog.open(UpdateHotelsComponent)
+    const dialogRef = this.dialog.open(UpdateHotelsComponent, {
+      height : "100vw",
+      width : "100vw"
+    })
     dialogRef.afterClosed().subscribe({
       next: (val) => {
         if (val) {

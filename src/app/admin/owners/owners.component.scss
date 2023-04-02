@@ -6,14 +6,18 @@
 
 .example-spacer {
     flex: 1 1 auto;
-  }
+}
 
-a{
+mat-toolbar {
+    width: 92vw;
+}
+
+a {
     margin: 0 10px;
     text-decoration: none;
 }
 
-.box{
+.box {
     width: 90vw;
     height: 75vh;
     border-radius: 25px;
@@ -27,6 +31,7 @@ a{
     margin: 0 auto;
     width: 95%;
     font-size: 20px;
+
     mat-form-field {
         width: 100%;
     }

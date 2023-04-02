@@ -19,15 +19,6 @@
       "password": "Tanaya@123"
     },
     {
-      "id": "Ajay007",
-      "firstname": "Ajay ",
-      "lastname": "Kharat",
-      "phone": "8857822354",
-      "email": "Ajay@123Gmail.com",
-      "gender": "male",
-      "password": "Ajay@123"
-    },
-    {
       "id": "Rahul007",
       "firstname": "Rahul",
       "lastname": "Dawle",
@@ -53,6 +44,15 @@
       "email": "Shivani.jadhav@gmail.com",
       "gender": "female",
       "password": "Shivani@123"
+    },
+    {
+      "id": "SsbePAO",
+      "firstname": "Ajay ",
+      "lastname": "Kharat",
+      "phone": "dfsdd",
+      "email": "",
+      "gender": "male",
+      "password": ""
     }
   ],
   "owners": [
@@ -63,14 +63,6 @@
       "phone": "8857822354",
       "gender": "male",
       "password": "admin"
-    },
-    {
-      "id": "Shivani007",
-      "name": "Shivani Jadhav",
-      "email": "Shivani.jadhav@gmail.com",
-      "phone": 9403782354,
-      "gender": "female",
-      "password": "Shivani@123"
     }
   ],
   "admin": [
@@ -104,18 +96,6 @@
   ],
   "hotels": [
     {
-      "name": "Taj Hotel",
-      "phone": 8857822354,
-      "email": "ajay@gmail.com",
-      "menu": "Dal Tadka",
-      "discription": "The Greatest Hotel Of All Time",
-      "address": "Gandhi Raod, new mumbai - 430001",
-      "arooms": 230,
-      "workers": 250,
-      "img":"restaurant",
-      "id": 1
-    },
-    {
       "name": "Green Valey",
       "phone": 8888696921,
       "email": "Green@gmail.com",
@@ -123,8 +103,7 @@
       "discription": "The Best manchurian in the world",
       "address": "Nehru Chauk , Amaravati - 421212",
       "arooms": 300,
-      "workers": 500,
-      "img":"hotel",
+      "workers": 20,
       "id": 3
     },
     {
@@ -136,7 +115,7 @@
       "address": "Chatrapati Shivaji Nagar, Pune - 431213",
       "arooms": 25,
       "workers": 30,
-      "img":"hotelroom",
+      "img": "hotelroom",
       "id": 4
     },
     {
@@ -147,9 +126,31 @@
       "discription": "The best Chat in the whole universe !!",
       "address": "pundalik baba nagar, \nAmaravati - 444604",
       "arooms": 200,
-      "workers": 400,
-      "img":"cafe",
+      "workers": 200,
+      "img": "hotel",
       "id": 5
+    },
+    {
+      "name": "Taj Hotel",
+      "phone": 9421322354,
+      "email": "Taj@gmail.com",
+      "menu": "Dal Tadka",
+      "discription": "The greatest hotel of all time",
+      "address": "Chatrapti sambhaji maharaj - 431213",
+      "arooms": 300,
+      "workers": 600,
+      "id": 6
+    },
+    {
+      "name": "fhjhgh",
+      "phone": 584564,
+      "email": "fdslajdkhj",
+      "menu": "hkjdskl;fhjdsk",
+      "discription": "lkjfdsl;kjalkf",
+      "address": "lkjhfdslk;jh",
+      "arooms": 45,
+      "workers": 5665,
+      "id": 7
     }
   ],
   "bookings": [
@@ -225,6 +226,17 @@
       "guests": "2",
       "rooms": "1",
       "id": 7
+    },
+    {
+      "start": "2023-02-28T18:30:00.000Z",
+      "end": "2023-03-08T18:30:00.000Z",
+      "fullname": "ajay kharat",
+      "email": "kharatajay023@gmail.com",
+      "phone": "8857822354",
+      "payment": "upi",
+      "guests": "2",
+      "rooms": "1",
+      "id": 8
     }
   ]
 }
